@@ -1,1 +1,99 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h> // Para strcasecmp
 
+#define NUM_COMANDOS 10
+#define TAM_TEXTO 100
+
+int main() {
+    char comandos[NUM_COMANDOS][TAM_TEXTO] = {
+        "ls", "cd", "mkdir", "rm", "cp", 
+        "mv", "clear", "pwd", "touch", "sudo"
+    };
+    
+    char funcoes[NUM_COMANDOS][TAM_TEXTO] = {
+        "listar arquivos",
+        "mudar de diretorio",
+        "criar pasta",
+        "remover arquivo",
+        "copiar arquivo",
+        "mover arquivo",
+        "limpar tela",
+        "mostrar caminho atual",
+        "criar arquivo",
+        "executar como administrador"
+    };
+
+    char resposta[TAM_TEXTO];
+    char jogar_denovo;
+
+    do {
+        int acertos = 0;
+
+        // Limpa a tela no inÃ­cio de cada partida
+        #ifdef _WIN32
+            system("cls");
+        #else
+            system("clear");
+        #endif
+
+        printf("=========================================\n");
+        printf("   DESAFIO DE MEMORIA: TERMINAL LINUX    \n");
+        printf("=========================================\n");
+        printf("Memorize os comandos abaixo:\n\n");
+
+        for (int i = 0; i < NUM_COMANDOS; i++) {
+            printf(" [%d] %-8s -> %s\n", i+1, comandos[i], funcoes[i]);
+        }
+
+        printf("\nPressione ENTER para esconder a lista e jogar...");
+        getchar(); // Pausa para memorizaÃ§Ã£o
+
+        // Fase de Perguntas
+        for (int i = 0; i < NUM_COMANDOS; i++) {
+            #ifdef _WIN32
+                system("cls");
+            #else
+                system("clear");
+            #endif
+
+            printf("--- RODADA %d de %d ---\n", i + 1, NUM_COMANDOS);
+            printf("Comando: %s\nQual a funcao? ", comandos[i]);
+            
+            fgets(resposta, TAM_TEXTO, stdin);
+            resposta[strcspn(resposta, "\n")] = 0; 
+
+            if (strcasecmp(resposta, funcoes[i]) == 0) {
+                printf(">> CORRETO!\n");
+                acertos++;
+            } else {
+                printf(">> ERRADO... Era: %s\n", funcoes[i]);
+            }
+            printf("\nPressione ENTER para a proxima...");
+            getchar();
+        }
+
+        // Placar Final
+        #ifdef _WIN32
+            system("cls");
+        #else
+            system("clear");
+        #endif
+
+        printf("=========================================\n");
+        printf("            JOGO CONCLUIDO!              \n");
+        printf("    Voce acertou %d de %d comandos.      \n", acertos, NUM_COMANDOS);
+        printf("=========================================\n\n");
+        
+        // O BotÃ£o de Reiniciar
+        printf("Deseja jogar novamente? (S/N): ");
+        scanf(" %c", &jogar_denovo);
+        getchar(); // Limpa o buffer do Enter
+
+    } while (jogar_denovo == 's' || jogar_denovo == 'S');
+
+    printf("\nObrigado por jogar! Ate a proxima.\n");
+
+    return 0;
+}
