@@ -1,1 +1,31 @@
+LEARN GIT BRANCHING
+
+MAIN
+<<< Sequência introdutória >>>
+1. git commit/ git commit
+2. git branch bugFix/ git checkout bugFix
+3. git checkout -b bugFix/ git commit/ git checkout main/ git merge bugFix
+4 git checkout -b bugFix/ git commit/ git checkout main/ git commit/ git checkout bugFix/ git rebase main
+
+<<< Acelerando >>>
+1. git checkout C4
+2. git checkout C3
+3. git branch -f main C6/ git checkout HEAD~1/ git branch -f bugFix Head~1
+4. git reset HEAD~1/ git checkout pushed/ git revert HEAD
+
+<<< Movendo trabalho por aí >>>
+1. git cherry-pick C3 C4 C7
+2. git rebase -i overHere
+
+<<< Sortidos >>>
+1. git rebase bugFix main
+2. git rebase -i HEAD~2/ git commit --amend/ git rebase -i HEAD~2/ git rebase caption main
+3. git checkout main/ git chery-pick C2/ git commit --amend/ git cherry-pick C3
+4. git tag v0 C1/ git tag v1 C2/ git checkout v1
+5. git describe v1/ git commit
+
+
+
+
+
 
