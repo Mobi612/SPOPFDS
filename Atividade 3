@@ -22,7 +22,31 @@ MAIN
 4. git tag v0 C1/ git tag v1 C2/ git checkout v1
 5. git describe v1/ git commit
 
+<<< Temas avançados >>>
+1. git rebase main bugFix/ git rebase bugFix side/ git rebase side another/ git rebase another main
+2. git branch bugWork main^^2^
+3. git checkout one/ git cherry-pick C4 C3 C2/ git checkout two/ git cherry-pick C5 C4 C3 C2/ get branch -f three C2
 
+REMOTE
+<<< Push & Pull -- repositórios remotos no Git! >>>
+1. git clone
+2. git fetch
+3. git pull
+4. git push
+5. git clone/ git fakeTeamwork2/ git commit/ git pull
+6. git commit/ git commit/ git push
+7. git clone/ git fakeTeamwork/ git commit/ git pull --rebase/ git push
+8. git branch -f main o/main// git checkout -b feature C2/ git push origin feature
+
+<<< Até a origin e além -- repositórios remotos avançados! >>>
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
 
 
 
