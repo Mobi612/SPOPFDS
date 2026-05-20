@@ -97,3 +97,53 @@
 
 **Questão 10) No Linux, qual comando é utilizado para REMOVER um arquivo chamado "relatorio.txt" e qual comando é utilizado para LISTAR os arquivos do diretório atual, respectivamente?**
 * **Resposta certa:** b) rm relatorio.txt; ls
+
+# Gabarito dos Exercícios - PROVA C
+
+**Questão 1) Quais das alternativas abaixo apresenta corretamente VANTAGENS do uso de um sistema de versionamento como o Git?**
+* **Resposta certa:** b) Controle de histórico, facilitação do trabalho em equipe, ramificação de projetos (branches), segurança e organização.
+
+---
+
+**Questão 2) Sobre os conceitos de branch (ramo), merge e conflito no Git, assinale a alternativa CORRETA:**
+* **Resposta certa:** b) Branches são ramos utilizados para novas codificações de forma isolada; o comando merge é usado para unir ramos, e podem ocorrer conflitos quando duas branches alteram o mesmo trecho de código.
+
+---
+
+**Questão 3) Qual comando é utilizado para LISTAR todas as branches existentes no repositório local?**
+* **Resposta certa:** c) git branch
+
+---
+
+**Questão 4) Você está na branch "main" e deseja MUDAR para uma branch já existente chamada "hotfix". Qual comando deve ser utilizado?**
+* **Resposta certa:** a) git checkout hotfix
+
+---
+
+**Questão 5) Considere o comando: git commit -m "Correção do bug de login". O que esse comando faz?**
+* **Resposta certa:** c) Confirma (registra) os arquivos da staging area no repositório local com a mensagem "Correção do bug de login".
+
+---
+
+**Questão 6) Qual comando exibe o HISTÓRICO de commits do repositório, mostrando autor, data e mensagem de cada commit?**
+* **Resposta certa:** b) git log
+
+---
+
+**Questão 7) Você quer adicionar TODOS os arquivos modificados e novos do diretório atual à staging area de uma só vez. Qual comando faz isso?**
+* **Resposta certa:** a) git add .
+
+---
+
+**Questão 8) Sobre as distribuições (distros) Linux, assinale a alternativa CORRETA:**
+* **Resposta certa:** b) Distribuição Linux é o conjunto formado pelo Kernel + Sistema GNU + Aplicativos + Empacotamento, sendo Ubuntu, Debian, Fedora, CentOS e Red Hat alguns exemplos.
+
+---
+
+**Questão 9) Sobre a estrutura de diretórios do Linux, assinale a alternativa CORRETA:**
+* **Resposta certa:** b) O diretório /home contém os diretórios pessoais dos usuários, /etc armazena arquivos de configuração e /bin contém binários executáveis básicos como ls e bash.
+
+---
+
+**Questão 10) Você está no diretório /home/usuario e precisa COPIAR de forma RECURSIVA toda a pasta "projeto" (incluindo subpastas e arquivos) para o diretório /home/usuario/backup. Qual comando realiza isso corretamente?**
+* **Resposta certa:** b) cp -R projeto /home/usuario/backup
