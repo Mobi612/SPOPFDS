@@ -1,4 +1,4 @@
-# Gabarito dos Exercícios - PROVA 1
+# Gabarito dos Exercícios - PROVA A
 
 **Questão 1) Sobre os conceitos de Git e GitHub, assinale a alternativa CORRETA:**
 * **Resposta certa:** b) O Git é um sistema de controle de versão distribuído, enquanto o GitHub é uma plataforma de hospedagem de repositórios baseada no Git.
@@ -47,3 +47,53 @@
 
 **Questão 10) Considere que você está no diretório /home/aluno e deseja: (1) criar um diretório chamado "projeto", (2) entrar nele e (3) verificar o caminho completo do diretório atual. Qual sequência de comandos realiza essas três tarefas, NESSA ORDEM?**
 * **Resposta certa:** b) mkdir projeto && cd projeto && pwd
+
+# Gabarito dos Exercícios - PROVA B
+
+**Questão 1) Sobre o conceito de Sistema de Controle de Versão (VCS), assinale a alternativa CORRETA:**
+* **Resposta certa:** b) VCS é um software que realiza o controle e versionamento de código-fonte e arquivos, podendo ser do tipo centralizado (ex.: Subversion/SVN) ou distribuído (ex.: Git).
+
+---
+
+**Questão 2) Sobre o armazenamento de dados no Git, assinale a alternativa CORRETA:**
+* **Resposta certa:** b) O Git armazena snapshots ("fotos") do projeto a cada commit; quando um arquivo não muda, ele cria apenas um ponteiro (link) para a versão anterior, otimizando o armazenamento.
+
+---
+
+**Questão 3) Você acabou de fazer alterações em vários arquivos e quer salvá-las DEFINITIVAMENTE no histórico do repositório local, com uma mensagem descritiva. Qual comando faz isso (após o git add)?**
+* **Resposta certa:** c) git commit -m "mensagem"
+
+---
+
+**Questão 4) Qual comando traz para o repositório local as alterações mais recentes que estão no repositório remoto, já as integrando à sua branch atual?**
+* **Resposta certa:** b) git pull
+
+---
+
+**Questão 5) Para verificar quais arquivos foram modificados, quais estão na staging area e quais ainda não foram rastreados, qual comando deve ser executado?**
+* **Resposta certa:** d) git status
+
+---
+
+**Questão 6) Você quer criar uma nova branch chamada "desenvolvimento" e MUDAR para ela imediatamente. Qual comando realiza as duas ações?**
+* **Resposta certa:** c) git checkout -b desenvolvimento
+
+---
+
+**Questão 7) Considere o seguinte fluxo: você editou o arquivo "index.html" em seu repositório local. Qual a sequência CORRETA de comandos para enviar essa alteração ao repositório remoto no GitHub?**
+* **Resposta certa:** b) git add index.html → git commit -m "alteração" → git push
+
+---
+
+**Questão 8) O que é o Kernel em um sistema operacional como o Linux?**
+* **Resposta certa:** d) É o núcleo do sistema operacional, responsável por gerenciar os recursos de hardware e software, permitindo que os programas façam uso desses recursos (memória, dispositivos, processos).
+
+---
+
+**Questão 9) Sobre o conceito de software de Código-Fonte Aberto (Open Source), assinale a alternativa CORRETA:**
+* **Resposta certa:** b) Em uma licença open source, os usuários têm liberdade para executar o código para qualquer propósito, estudá-lo, modificá-lo e distribuí-lo.
+
+---
+
+**Questão 10) No Linux, qual comando é utilizado para REMOVER um arquivo chamado "relatorio.txt" e qual comando é utilizado para LISTAR os arquivos do diretório atual, respectivamente?**
+* **Resposta certa:** b) rm relatorio.txt; ls
