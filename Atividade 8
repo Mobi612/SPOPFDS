@@ -1,1 +1,77 @@
+Atividade — Software Livre  
+Alunos: Daniel Bonfim da Silva e Moisés Bisin 
 
+Parte 1 — Identificação 
+
+1. O projeto escolhido foi o Visual Studio Code, mais conhecido como VS 
+Code, desenvolvido pela Microsoft. O editor foi criado para ser leve e gratuito, 
+mas sem abrir mão de recursos úteis no dia a dia, como depuração, suporte 
+ao Git e autocomplete inteligente. Hoje é um dos mais usados no mundo, com 
+suporte a várias linguagens e uma enorme biblioteca de extensões. 
+
+2. A linguagem principal utilizada no desenvolvimento do projeto é TypeScript. 
+
+3. O repositório possui aproximadamente 185 mil estrelas e 39,9 mil forks no 
+GitHub. As estrelas funcionam como uma forma de indicar que muitos 
+desenvolvedores consideram o projeto útil. Já os forks mostram quantas 
+pessoas fizeram uma cópia do repositório, seja para contribuir com melhorias 
+ou adaptar o código para outros fins. 
+
+Parte 2 — Aspectos Jurídicos 
+
+4. O VS Code utiliza a licença MIT License (Massachusetts Institute of 
+Technology License). 
+
+5. A licença MIT é permissiva. Diferente de licenças copyleft, como a GPL, ela 
+não exige que quem modificar o código distribua as alterações sob as 
+mesmas regras, o que permite o uso até em softwares proprietários. 
+
+6. A licença permite usar, modificar e redistribuir o código livremente, inclusive 
+para fins comerciais. A única restrição é manter o aviso de copyright original 
+em todas as cópias do software. 
+Parte 3 — Contribuição 
+
+7. Sim, há um arquivo CONTRIBUTING.md no repositório. Três requisitos 
+exigidos para que uma contribuição seja aceita são: assinar o CLA 
+(Contributor License Agreement) da Microsoft; abrir um pull request separado 
+para cada issue, linkando-a no PR; e seguir as diretrizes de código do projeto, 
+mantendo as mudanças no menor escopo possível. 
+
+8. Existem 22 issues abertas com a tag "good first issue". Link da busca: 
+https://github.com/microsoft/vscode/issues?q=is%3Aopen+label%3A%22good
++first+issue%22 
+
+9. Sim, há um CODE_OF_CONDUCT.md no repositório. Ele adota o Microsoft 
+Open Source Code of Conduct, que proíbe explicitamente ameaças ou 
+linguagem violenta, piadas e linguagem discriminatória, publicação de 
+material ofensivo e divulgação de informações pessoais de terceiros sem 
+consentimento. 
+
+10. A issue #244138 relata um bug no menu de extensões: ao desabilitar 
+uma extensão que já estava desabilitada globalmente, mas habilitada no 
+workspace, aparece um dropdown com "Disable" e "Disable (Workspace)" 
+juntos, quando o correto seria mostrar apenas "Disable (Workspace)". Para 
+corrigir, seria preciso encontrar onde o VS Code define quais opções mostrar 
+nesse menu e ajustar essa lógica para considerar o estado atual da extensão 
+antes de exibir as opções. 
+Parte 4 — Reflexão 
+
+11. Acreditamos que a licença MIT foi escolhida porque possibilita que 
+qualquer pessoa use o VS Code sem restrições, inclusive empresas que 
+precisam integrá-lo em produtos fechados. Isso foi essencial para o editor 
+crescer tão rápido. Para os usuários, a vantagem é poder usar, modificar e 
+distribuir o código sem burocracia. Já para o projeto, isso atraiu muito mais 
+contribuidores e empresas do que atrairia com uma licença mais restritiva. 
+
+12. O primeiro passo seria entrar na lista de issues com o label "good first 
+issue", escolher uma que fizesse sentido para nós e comentar na própria 
+issue avisando que pretendemos trabalhar nela. Isso evita duplicação de 
+esforço e ainda abre um canal direto com os mantenedores para tirar dúvidas 
+antes de começar a codar. 
+
+Referências 
+● Repositório oficial: https://github.com/microsoft/vscode 
+● Licença MIT: https://choosealicense.com/licenses/mit/ 
+● Código de Conduta: https://opensource.microsoft.com/codeofconduct/ 
+● Guia de contribuição: 
+https://github.com/microsoft/vscode/wiki/How-to-Contribute
